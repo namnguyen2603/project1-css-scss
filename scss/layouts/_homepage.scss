@@ -8,7 +8,7 @@
       h2 {
         font-size: 2rem;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 800;
         padding-bottom: 20px;
         color: $textColor;
       }
@@ -17,32 +17,34 @@
         color: $textColor;
       }
       p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: $textColor;
+        line-height: 2rem;
       }
     }
     .right {
       display: flex;
       position: relative;
       background-color: #dcffca;
-      border-radius: 20px 0px 0px 20px;
+      border-radius: 20px;
       img {
-        max-width: 400px;
+        max-width: 50%;
       }
       .content {
         position: relative;
+        display: flex;
+
+        align-items: center;
 
         p {
           display: block;
           position: absolute;
-          top: 25%;
-          right: -200px;
-          font-size: 80px;
+          font-size: 50px;
           color: #216000;
           rotate: 90deg;
           font-style: normal;
           font-weight: 800;
-          //   line-height: 100%;
+
           opacity: 0.15000000596046448;
         }
       }
@@ -51,10 +53,25 @@
 }
 
 @media screen and (min-width: 576px) {
+  .homepage {
+    .product-feature {
+      .right {
+        .content {
+          p {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .homepage {
     .product-feature {
+      .left {
+        text-align: left;
+      }
+
       .right {
         img {
           max-width: 500px;
@@ -70,8 +87,226 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .homepage {
+    .product-feature {
+      .left {
+        h2 {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+        h1 {
+          padding-bottom: 40px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24.5px;
+        }
+      }
+      .right {
+        border-radius: 20px 0 0 20px;
+        img {
+          position: relative;
+          left: -10%;
+        }
+        .content {
+          position: relative;
+          left: -170px;
+          p {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+  }
 }
+
 @media screen and (min-width: 1200px) {
+  .homepage {
+    .product-feature {
+      .right {
+        .content {
+          position: relative;
+          left: -50px;
+          p {
+            font-size: 100px;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 1400px) {
+  .homepage {
+    .product-feature {
+      .right {
+        .content {
+          position: relative;
+
+          p {
+            font-size: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+// end product feature
+
+.homepage {
+  .data {
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+
+        .content {
+          text-align: center;
+          margin: 0 30px;
+          max-width: 772px;
+          h2 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            padding-bottom: 20px;
+            color: #2c2c2c;
+          }
+          p {
+            font-size: 1.4rem;
+            color: #2c2c2c;
+            line-height: 2rem;
+            padding-bottom: 30px;
+            margin-bottom: 100px;
+          }
+        }
+      }
+    }
+    .container {
+      $width: 100px;
+      position: relative;
+      .circle1,
+      .circle2 {
+        width: $width;
+        height: $width;
+      }
+      .circle1 {
+        background: #dcffca;
+        border-radius: 50%;
+        position: absolute;
+        top: -$width / 2;
+        z-index: -1;
+        left: -15px;
+      }
+      .circle2 {
+        background: #ffd5bd;
+        border-radius: 50%;
+        position: relative;
+        margin-left: auto;
+        top: -$width / 2 - 30px;
+        right: -15px;
+        z-index: -1;
+      }
+      .row {
+        .user,
+        .restaurant,
+        .province {
+          width: 90%;
+          border-radius: 4px;
+          background: var(--white, #fff);
+          box-shadow: -7px 10px 87px 0px rgba(54, 54, 54, 0.12);
+          padding: 20px;
+          margin-bottom: 30px;
+
+          img {
+            width: 54px;
+            height: 54px;
+            border: 1px black solid;
+            padding: 5px;
+            border-radius: 12px;
+            background: #fff0e7;
+            margin-bottom: 28px;
+          }
+
+          h1 {
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 29px;
+          }
+          p {
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .homepage {
+    .data {
+      .container {
+        $width: 150px;
+        .circle1,
+        .circle2 {
+          width: $width;
+          height: $width;
+        }
+        .circle1 {
+          top: -$width / 2;
+          z-index: -1;
+          left: -15px;
+        }
+        .circle2 {
+          top: -$width / 2 - 30px;
+          right: -15px;
+        }
+
+        .row {
+          .user,
+          .restaurant,
+          .province {
+            text-align: center;
+            max-width: 80%;
+          }
+          .restaurant {
+            img {
+              background: #f2ffec;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .homepage {
+    .data {
+      .container {
+        $width: 200px;
+        .circle1,
+        .circle2 {
+          width: $width;
+          height: $width;
+        }
+        .circle1 {
+          top: -$width / 2;
+          z-index: -1;
+          left: -15px;
+        }
+        .circle2 {
+          top: -$width / 2 - 30px;
+          right: -15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
 }
