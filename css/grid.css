@@ -92,7 +92,7 @@
 .row.g-4>[class^=col-],
 .row.g-5>[class^=col-] {
     padding: 0 calc(var(--column-space) / 2);
-    margin-bottom: var(--column-space);
+    /* margin-bottom: var(--column-space); */
 }
 
 .row.g-1>[class^=col-] {
