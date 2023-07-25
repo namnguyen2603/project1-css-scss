@@ -629,6 +629,9 @@ ol {
   max-width: 90%;
 }
 
+.strengths {
+  margin-bottom: 160px;
+}
 .strengths .container .row .col-xxl-9 {
   margin: 0 auto;
 }
@@ -655,6 +658,148 @@ ol {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.contact-form .container .row .form {
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .container .row .form h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.contact-form .container .row .form .form-part {
+  display: flex;
+}
+.contact-form .container .row .form .form-part input {
+  flex: 1;
+}
+.contact-form .container .row .form .form-part input:nth-child(1) {
+  margin-right: 37px;
+}
+.contact-form .container .row .form input {
+  display: inline-flex;
+  padding: 16px 0 16px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #a3a3a3;
+  margin-bottom: 28px;
+}
+.contact-form .container .row .form .textarea {
+  height: 178px;
+  width: 100%;
+  display: inline-flex;
+  padding: 16px 0 0 16px;
+  margin-bottom: 32px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #a3a3a3;
+}
+.contact-form .container .row .form .form-btn {
+  display: block;
+  width: 154px;
+  height: 56px;
+  background-color: #46b20f;
+  border-radius: 8px;
+  padding: 16px 14px;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+}
+
+.footer {
+  padding-top: 80px;
+  margin-top: 120px;
+  background: #f2ffec;
+}
+.footer .container .row .contact {
+  display: flex;
+  gap: 128px;
+}
+.footer .container .row .contact .logo .img {
+  margin-bottom: 20px;
+}
+.footer .container .row .contact .home {
+  min-width: 120px;
+}
+.footer .container .row .contact .help .time,
+.footer .container .row .contact .help .phone {
+  display: flex;
+}
+.footer .container .row .contact .help .time img,
+.footer .container .row .contact .help .phone img {
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
+.footer .container .row .contact .help .time p,
+.footer .container .row .contact .help .phone p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.footer .container .row .contact .contact-list .title,
+.footer .container .row .contact .contact-list .mail,
+.footer .container .row .contact .contact-list .address,
+.footer .container .row .contact .contact-list .web {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+.footer .container .row .contact .contact-list .title img,
+.footer .container .row .contact .contact-list .mail img,
+.footer .container .row .contact .contact-list .address img,
+.footer .container .row .contact .contact-list .web img {
+  margin-right: 12px;
+}
+.footer .container .row .contact h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  color: #46b20f;
+  margin-bottom: 16px;
+}
+.footer .container .row .contact p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.5px;
+  margin-bottom: 8px;
+}
+.footer .container .row .line {
+  width: 100%;
+  height: 2px;
+  background-color: #a3a3a3;
+  margin-top: 86px;
+  margin-bottom: 28px;
+}
+.footer .container .row .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.footer .container .row .social .social-icon ul {
+  display: flex;
+  gap: 8px;
+}
+.footer .container .row .social .social-icon ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #dcffca;
 }
 
 /*# sourceMappingURL=style.css.map */

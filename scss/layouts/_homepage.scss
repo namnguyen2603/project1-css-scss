@@ -527,6 +527,7 @@
 
 // strengths
 .strengths {
+  margin-bottom: 160px;
   .container {
     .row {
       .col-xxl-9 {
@@ -565,3 +566,66 @@
   }
 }
 // end strengths
+
+// contact-form
+.contact-form {
+  .container {
+    .row {
+      .form {
+        margin-top: 66px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px;
+          margin-bottom: 32px;
+        }
+        .form-part {
+          display: flex;
+          input {
+            flex: 1;
+            &:nth-child(1) {
+              margin-right: 37px;
+            }
+          }
+        }
+        input {
+          display: inline-flex;
+          padding: 16px 0 16px 16px;
+          align-items: center;
+          gap: 10px;
+          border-radius: 8px;
+          border: 1px solid #a3a3a3;
+          margin-bottom: 28px;
+        }
+        .textarea {
+          height: 178px;
+          width: 100%;
+          display: inline-flex;
+          padding: 16px 0 0 16px;
+          margin-bottom: 32px;
+          gap: 10px;
+          border-radius: 8px;
+          border: 1px solid #a3a3a3;
+        }
+        .form-btn {
+          display: block;
+          width: 154px;
+          height: 56px;
+          background-color: $primaryColor;
+          border-radius: 8px;
+          padding: 16px 14px;
+          color: #fff;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+// end contact-form
