@@ -8,12 +8,13 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 1.6rem;
   color: $textColor;
-  line-height: 1.2;
+  line-height: 1.25;
   font-family: $fontFamily;
 }
 
@@ -30,4 +31,14 @@ img {
 ul,
 ol {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headingColor;
+  margin: 20px 0;
 }
